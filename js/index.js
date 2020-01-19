@@ -297,7 +297,10 @@ function changeV() {
   duration = parseFloat(element3.value);
   speed = parseFloat(element5.value);
   radius = parseFloat(element6.value);
+  resolution = parseFloat(element4.value);
 }
+
+changeV();
 
 var fps = 100;
 function update() {
@@ -327,3 +330,5 @@ render = () => {
 };
 
 render();
+
+["其实有很多话想对你说", ""];
