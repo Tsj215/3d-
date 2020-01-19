@@ -114,6 +114,12 @@ var ctx = canvas.getContext("2d");
 W = canvas.width = window.innerWidth;
 H = canvas.height = window.innerHeight;
 
+window.addEventListener("resize", function() {
+  W = canvas.width = window.innerWidth;
+  H = canvas.height = window.innerHeight;
+  console.log("resize");
+});
+
 gridX = 5;
 gridY = 5;
 
