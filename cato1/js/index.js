@@ -317,14 +317,25 @@ function update() {
 
 render = () => {
   const inputValue = document.getElementById("message");
-  const text = ["其实啊", "有很多话想对你说", "但每次话到嘴边又忍住了"];
+  const text = [
+    "其实啊",
+    "有很多话",
+    "都想对你说",
+    "但每次呢",
+    "一到嘴边",
+    "又说不出来",
+    "小莫云,你说",
+    "为什么",
+    "制造遗憾的",
+    "偏偏是爱呢"
+  ];
 
   text.map((t, i) => {
     (function(index) {
       setTimeout(() => {
         inputValue.value = t;
         change();
-      }, index * 4000);
+      }, index * 1500);
     })(i);
   });
 };
