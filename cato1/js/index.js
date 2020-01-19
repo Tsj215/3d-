@@ -317,7 +317,7 @@ function update() {
 
 render = () => {
   const inputValue = document.getElementById("message");
-  const text = ["但凡未得到", "但凡是过去", "总是最登对"];
+  const text = ["其实啊", "有很多话想对你说", "但每次话到嘴边又忍住了"];
 
   text.map((t, i) => {
     (function(index) {
@@ -330,5 +330,3 @@ render = () => {
 };
 
 render();
-
-["其实有很多话想对你说", ""];
